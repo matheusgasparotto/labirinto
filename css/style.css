@@ -1,8 +1,17 @@
-body{
+.Start{
+    background-image: url('img/backgroundfinal.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
+}
+body{
+    height:100vh;
     width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Wall{
@@ -32,4 +41,64 @@ body{
 #Player{
     width: 100%;
     height: 100%;
+}
+
+h1{
+    margin:0 auto;
+    font-size: 50px;
+    color: greenyellow;
+    font-weight: bold;
+}
+
+.victory{
+    width: 30%;
+    margin-bottom: 105px;
+}
+.victory img{
+    width: 100%;
+}
+
+.FinalContainer{
+    background-image: url('img/backgroundfinal.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.startButton{
+    align-self: center;
+    margin: 0 auto;
+    width: 20%;
+    letter-spacing: 1px;
+    border:none;
+    border-radius: 15px;
+    background-color: #3ea33f;
+    color: honeydew;
+    font-size: 18px;
+    height: 50px;
+    font-weight: bold;
+}
+.startButton:hover{
+    background-color: #277629;
+    cursor: pointer;
+}
+
+.RestartButton{
+    border:none;
+    border-radius: 15px;
+    background-color: #3ea33f;
+    color: honeydew;
+    font-size: 18px;
+    height: 50px;
+    font-weight: bold;
+}
+
+.RestartButton:hover{
+    background-color: #277629;
+    cursor: pointer;
 }

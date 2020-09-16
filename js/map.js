@@ -37,25 +37,26 @@ function creatMap() {
             if (element === Final) {
                 creatDiv('Final')
             }
-        });
+        })
     })
 }
-creatMap()
+
+
 
 function imgInPlayer() {
     Player = document.querySelector('.Player')
     imgPlayer = new Image()
-    imgPlayer.src = 'img/mario.gif'
+    imgPlayer.src = 'css/img/mario.gif'
     imgPlayer.id = 'Player'
     Player.appendChild(imgPlayer)
 }
-imgInPlayer()
+
 
 function imgInWall() {
     Wall = document.querySelectorAll('.Wall')
     Wall.forEach(element => {
         imgWall = new Image()
-        imgWall.src = 'img/wall.png'
+        imgWall.src = 'css/img/wall.png'
         element.appendChild(imgWall)
     });
 
