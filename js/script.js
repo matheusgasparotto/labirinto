@@ -21,9 +21,8 @@ function creatMap() {
         const Circuit = element.split('')
         const Wall = 'W'
         const Cells = ' '
-        const Player = 'S'
+        let Player = 'S'
         const Final = 'F'
-
 
         Circuit.forEach(element => {
             if (element === Wall) {
@@ -41,6 +40,15 @@ function creatMap() {
         });
     })
 }
+creatMap()
+
+function imgInPlayer() {
+    Player = document.querySelector('.Player')
+    imgPlayer = new Image()
+    imgPlayer.src = 'img/mario.gif'
+    Player.appendChild(imgPlayer)
+}
+imgInPlayer()
 
 function creatDiv(divClass) {
     let divName = document.createElement('div')
