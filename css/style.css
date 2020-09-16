@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.Wall{
+    background-color: red;
+    width: 4.761904762%;
+    height: 6.666666667%;
+}
+
+.Cell{
+    background-color: white;
+    width: 4.761904762%;
+    height: 6.666666667%;
+}
+.Player{
+    background-color: white;
+    width: 4.761904762%;
+    height: 6.666666667%;
+}
+.Final{
+    background-color: white;
+    width: 4.761904762%;
+    height: 6.666666667%;
+}
