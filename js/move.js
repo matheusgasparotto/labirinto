@@ -26,5 +26,4 @@ function move(event) {
         divs.forEach(validationVictory)
     }
 
-
 }

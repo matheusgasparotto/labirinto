@@ -1,5 +1,15 @@
+let IndexElement = 0
+function index(element) {
+    for (let i = 0; i < divs.length; i++) {
+        if (element === divs[i]) {
+            IndexElement = i
+        }
+    }
+}
+
 function validationRight(element) {
     if (element === PlayerLocation) {
+        imgInPlayerMove('css/img/mario.gif')
         Player = document.getElementById('Player')
 
         index(element)
@@ -12,6 +22,7 @@ function validationRight(element) {
 
 function validationLeft(element) {
     if (element === PlayerLocation) {
+        imgInPlayerMove('css/img/marioleft.gif')
         Player = document.getElementById('Player')
 
         index(element)
@@ -23,6 +34,7 @@ function validationLeft(element) {
 
 function validationUp(element) {
     if (element === PlayerLocation) {
+        imgInPlayerMove('css/img/marioup.gif')
         Player = document.getElementById('Player')
 
         index(element)
@@ -34,6 +46,7 @@ function validationUp(element) {
 
 function validationDown(element) {
     if (element === PlayerLocation) {
+        imgInPlayerMove('css/img/mariodown.gif')
         Player = document.getElementById('Player')
 
         index(element)
@@ -55,16 +68,6 @@ function validationVictory(element) {
     }
 }
 
-let IndexElement = 0
-
-function index(element) {
-    for (let i = 0; i < divs.length; i++) {
-        if (element === divs[i]) {
-            IndexElement = i
-        }
-    }
-}
-
 function VictoryRestart(){
     document.body.classList.add ('FinalContainer')
     let mario = document.createElement('div')
@@ -79,9 +82,9 @@ function VictoryRestart(){
     RestartButton.id = 'RestartButton'
     RestartButton.innerText = 'Jogar Novamente'
     document.body.appendChild(RestartButton)
-
-    RestartButton.addEventListener('click',restart)
+   
     StopmusicGame()
     PlaymusicVictory()
 
+    RestartButton.addEventListener('click',restart)
 }

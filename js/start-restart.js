@@ -2,14 +2,12 @@ let button = document.getElementById('ButtonStart')
 
 button.addEventListener('click', start)
 
-
-
 function start(){
     document.body.removeChild(button)
     PlaymusicGame()
     creatMap()
     imgInWall()
-    imgInPlayer()
+    imgInPlayerFirst('css/img/mario.gif')
     captionDivs()
 }
 
